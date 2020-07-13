@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Ke Cheng's Form</title>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fullname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>	
+</head>
+
+<body>
+		<form name="myForm" onsubmit="return validateForm()" method="post">	
+		<legend>Form Assignment</legend>	
+		<fieldset>
+			<div class="content">
+				<label for="fullname">Full Name</label>
+				<input type="text" name="fullname" id="fullname" />
+			</div>
+			<div class="content">		
+				<label for="email">Email</label>
+				<input type="text" name="email" id="email" />
+			</div>		
+			<div class="content">
+				<label for="message">Message</label>
+				<textarea type="text" name="message" id="message"/>
+				</textarea>
+			</div>
+			<div class="content">
+				<input type="submit" value="Submit">
+			</div>
+		</fieldset>
+		</form>	
+</body>
+
+</html>
+
+
