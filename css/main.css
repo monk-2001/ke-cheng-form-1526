@@ -102,7 +102,7 @@ textarea{
 	border: 1px solid #DDD;
 }
 
-input[type="submit" i]{
+input[type="button" i]{
 	text-align: center;
 	color: white;
 	background-color: #6495ED;
@@ -199,7 +199,7 @@ input[type="submit" i]{
 		width: 100%;
 	}
 
-	input[type="submit" i]{
+	input[type="button" i]{
 		margin-top: 25px;
 		text-align: center;
 		color: white;

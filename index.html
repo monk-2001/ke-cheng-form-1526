@@ -5,41 +5,31 @@
 	<meta charset="UTF-8">
 	<title>Ke Cheng's Form</title>
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
-	<script>
-function validateForm() {
-  var x = document.forms["myForm"]["fullname"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-}
-</script>	
 </head>
 
 <body>
-		<form name="myForm" onsubmit="return validateForm()" method="post">	
+	<form>	
 		<legend>Form Assignment</legend>	
 		<fieldset>
 			<div class="content">
 				<label for="fullname">Full Name</label>
-				<input type="text" name="fullname" id="fullname" />
+				<input type="text" name="fullname" id="fullname" value="" />
 			</div>
-			<div class="content">		
+			<div class="content">			
 				<label for="email">Email</label>
-				<input type="text" name="email" id="email" />
+				<input type="text" name="email" id="email" value="" />
 			</div>		
 			<div class="content">
 				<label for="message">Message</label>
-				<textarea type="text" name="message" id="message"/>
-				</textarea>
+				<textarea type="text" name="message" id="message" value = "" ></textarea>
 			</div>
 			<div class="content">
-				<input type="submit" value="Submit">
+				<input type="button" value="Submit" id="submit" />
 			</div>
 		</fieldset>
-		</form>	
+	</form>	
+<script src="./js/main.js"></script>	
 </body>
 
 </html>
-
 
