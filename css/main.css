@@ -5,7 +5,6 @@
 body{
 	margin-top: 10%;
 	text-align: center;
-	background-color: #F5F5F5;
 }
 	
 label{
@@ -30,7 +29,7 @@ form{
 	text-align: center;
 	max-width: 50rem;
 	margin: auto;
-	background-color: #F5F5F5;	
+	width: 100%;
 }
 
 /*THE LEGEND*/
@@ -39,13 +38,25 @@ legend{
 	padding:30px 20px 30px 20px;	
 	margin-left:4%;
 	width: auto;
-	border: 1px solid gray;
+	border: 1px solid #DDD;
 	text-align:center;
-	background-color: #F5F5F5;
+	background-color: white;
 	position: absolute;
 }
 
 /*THE CONTENT*/
+fieldset{
+	padding: 30px;
+	height: 380px;
+	background-color: #F5F5F5;
+	display: inline-block;	
+	border: 1px solid #DDD;
+}
+
+fieldset > div{
+	position: realtive;
+}
+
 fieldset>div:first-child{
 	display: inline-block;
 }
@@ -66,17 +77,6 @@ div:nth-child(4){
 	margin-top: 20px;
 }
 
-fieldset{
-	padding: 30px;
-	height: 400px;
-	background-color: #DDD;
-	display: inline-block;	
-	border: 1px solid gray;
-}
-
-fieldset > div{
-	position: realtive;
-}
 
 label {
 	margin-bottom: 10px;
@@ -87,16 +87,19 @@ label {
 #fullname{
 	width: 330px;
 	height: 30px;
+	border: 1px solid #DDD;
 }
 
 #email{
 	width: 330px;
 	height: 30px;
+	border: 1px solid #DDD;
 }
 
 textarea{
 	height: 60px;
 	width: 700px;
+	border: 1px solid #DDD;
 }
 
 input[type="submit" i]{
@@ -105,10 +108,11 @@ input[type="submit" i]{
 	background-color: #6495ED;
  	padding: 10px 10px 10px 10px;
  	text-decoration: none;
+  	margin-top:5px;
   	margin-bottom: 15px;
   	width: 120px;
   	margin-right: 85%;
-  	border: 1px solid gray;
+  	border: 1px solid #DDD;
 }
 
 /*Smart-phone*/
@@ -131,7 +135,9 @@ input[type="submit" i]{
 	form{					
 		max-width:25rem;
 		width:100%;	
-		margin-left: 40%;		
+		margin-left: 40%;
+		margin-right: 20%;
+		display: block;
 	}
 	
 	legend{
@@ -139,7 +145,6 @@ input[type="submit" i]{
 		padding:20px 15px;	
 		margin-left:2%;
 		width: auto;
-		border-style: solid;
 		text-align:center;
 		background-color: #F5F5F5;
 		position: absolute;
